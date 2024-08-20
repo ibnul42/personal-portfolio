@@ -9,9 +9,11 @@ export default function TypeWriting() {
         <TypeAnimation
             sequence={[
                 // Same substring at the start will only be typed out once, initially
-                'Applications',
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                'Solutions',
+                'Web Solutions',
+                1000,
+                'Applications Solutions',
+                1000,
+                'Web Services',
                 1000,
             ]}
             wrapper="span"

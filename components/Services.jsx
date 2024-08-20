@@ -8,21 +8,6 @@ import { FaAppStoreIos } from "react-icons/fa";
 
 const allServices = [
     {
-        icon: 'MdOutlineDesignServices',
-        title: 'UI/UX design',
-        caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore. Ad illum, illo ipsam itaque quam corrupti earum explicabo'
-    },
-    {
-        icon: 'MdOutlineMobileFriendly',
-        title: 'Mobile app',
-        caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore. Ad illum, illo ipsam itaque quam corrupti earum explicabo'
-    },
-    {
-        icon: 'SiGraphql',
-        title: 'graphic design',
-        caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore. Ad illum, illo ipsam itaque quam corrupti earum explicabo'
-    },
-    {
         icon: 'MdDeveloperMode',
         title: 'web developer',
         caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore. Ad illum, illo ipsam itaque quam corrupti earum explicabo'
@@ -30,11 +15,6 @@ const allServices = [
     {
         icon: 'GrOptimize',
         title: 'seo optimization',
-        caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore. Ad illum, illo ipsam itaque quam corrupti earum explicabo'
-    },
-    {
-        icon: 'FaWordpress',
-        title: 'wordpress developer',
         caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolore. Ad illum, illo ipsam itaque quam corrupti earum explicabo'
     },
     {

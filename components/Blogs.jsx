@@ -70,7 +70,8 @@ export default function Blogs() {
 const SingleBlog = (item) => {
     return (
         <div className="border border-orange-200 transition-all space-y-2 rounded-md overflow-hidden">
-            <div className="w-full aspect-video hover:bg-black">
+            <div className="w-full aspect-video relative group">
+                <div className="hidden group-hover:block absolute top-0 left-0 w-full h-full bg-black/20"></div>
                 <Image src={item.icon} width={500} height={500} alt='' className='w-full h-full object-cover' />
             </div>
             <div className="px-3 py-4 space-y-3">

@@ -70,7 +70,7 @@ export default function Contact() {
                             </div>
                             <div className="">
                                 <p className='font-semibold'>Address</p>
-                                <p className='text-sm hover:text-orange-400 font-light'>202 Dog Hill Lane Beloit, KS 67420</p>
+                                <p className='text-sm hover:text-orange-400 font-light'>2210 Rutledge Ave, Orlando, FL 32817</p>
                             </div>
                         </div>
                         <div className="flex gap-2 items-center">
@@ -79,7 +79,7 @@ export default function Contact() {
                             </div>
                             <div className="">
                                 <p className='font-semibold'>Phone</p>
-                                <p className='text-sm hover:text-orange-400 font-light'>+0123456789</p>
+                                <a className='text-sm hover:text-orange-400 font-light' href="tel:+18564370495">(856) 437-0495</a>
                             </div>
                         </div>
                         <div className="flex gap-2 items-center">
@@ -88,7 +88,7 @@ export default function Contact() {
                             </div>
                             <div className="">
                                 <p className='font-semibold'>Email</p>
-                                <p className='text-sm hover:text-orange-400 font-light'>example@mail.com</p>
+                                <a className='text-sm hover:text-orange-400 font-light' href="mailto:henryfdiaz8@gmail.com">henryfdiaz8@gmail.com</a>
                             </div>
                         </div>
                     </div>
