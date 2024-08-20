@@ -19,7 +19,7 @@ export default function Hero() {
                 <div className="col-span-12 md:col-span-7 order-2 md:order-1 flex flex-col gap-4 justify-center">
                     <Title title='My name is Henry Diaz' />
                     <div className='text-4xl font-semibold'>
-                        <p>I am a software developer and a business owner of LeoJonny</p>
+                        <p>I am a software developer and a business owner of LeoJonny LLC</p>
                         <div className='text-orange-600'><TypeWriting /></div>
                     </div>
                     <button
