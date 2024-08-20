@@ -8,7 +8,7 @@ export default function Navbar() {
                 <div className="">
                     <Link
                     href='/'
-                    className='text-lg font-bold'
+                    className='text-xl font-bold'
                     >LeoJonny LLC</Link>
                 </div>
             </div>
