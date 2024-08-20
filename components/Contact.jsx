@@ -57,7 +57,7 @@ export default function Contact() {
                                 className='w-full py-2 px-2 rounded-md outline-none border border-orange-200 text-sm placeholder:font-light font-light'
                             />
                         </div>
-                        <div className="">
+                        <div className="col-span-2">
                             <button
                                 className='py-3 px-5 my-5 rounded-lg text-white bg-orange-500 hover:bg-orange-600 w-fit font-medium transition-all'
                             >Send Me Message</button>
