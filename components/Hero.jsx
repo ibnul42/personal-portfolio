@@ -18,11 +18,10 @@ export default function Hero() {
             <div className="w-full max-w-7xl mx-auto px-3 grid grid-cols-12 gap-3">
                 <div className="col-span-12 md:col-span-7 order-2 md:order-1 flex flex-col gap-4 justify-center">
                     <Title title='My name is Henry Diaz' />
-                    <div className='text-5xl font-semibold'>
-                        <p>I am a software developer and do </p>
+                    <div className='text-4xl font-semibold'>
+                        <p>I am a software developer and a business owner of LeoJonny</p>
                         <div className='text-orange-600'><TypeWriting /></div>
                     </div>
-                    <p className='text-sm font-light'>I am a software developer and a business owner of LeoJonny.</p>
                     <button
                         onClick={downloadFile}
                         className='my-2 py-3 px-5 rounded-lg text-white bg-orange-500 hover:bg-orange-600 w-fit font-medium transition-all'
