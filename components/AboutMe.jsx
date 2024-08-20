@@ -37,10 +37,10 @@ export default function AboutMe() {
                     <Title title='About Me' />
                     <p className='capitalize text-4xl font-semibold'>I can design anything you want</p>
                     <div className="text-sm font-light space-y-3">
-                        <p>I'm a passionate C#/.NET software developer who thrives on creating fantastic applications that simplify and add fun to life. Coding is not just a job for me; it's a love affair. I relish learning and problem-solving, always on the lookout for fresh challenges.</p>
-                        <p>My journey includes contributing to numerous enterprise projects for various companies, where I've honed my skills and gained valuable experience. Sharing my knowledge with others is something I find joy in.</p>
-                        <p>Currently, I'm on the lookout for exciting opportunities to further enhance my skills and broaden my horizons. Whether it's collaborating with fellow developers, joining a dynamic team, or taking on freelance projects, I'm up for it! If you're interested in working together, feel free to reach out via LinkedIn or email. I'm eager to connect!</p>
-                        <p>Thanks a bunch for checking out my profile, and here's to wishing you a fantastic day!</p>
+                        <p>I&apos;m a passionate C#/.NET software developer who thrives on creating fantastic applications that simplify and add fun to life. Coding is not just a job for me; it's a love affair. I relish learning and problem-solving, always on the lookout for fresh challenges.</p>
+                        <p>My journey includes contributing to numerous enterprise projects for various companies, where I&apos;ve honed my skills and gained valuable experience. Sharing my knowledge with others is something I find joy in.</p>
+                        <p>Currently, I&apos;m on the lookout for exciting opportunities to further enhance my skills and broaden my horizons. Whether it's collaborating with fellow developers, joining a dynamic team, or taking on freelance projects, I'm up for it! If you're interested in working together, feel free to reach out via LinkedIn or email. I'm eager to connect!</p>
+                        <p>Thanks a bunch for checking out my profile, and here&apos;s to wishing you a fantastic day!</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 py-5">
                         {achievements?.map((item) => (
