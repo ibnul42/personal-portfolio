@@ -22,10 +22,9 @@ export default function Hero() {
                         <p>I am a software developer and do </p>
                         <div className='text-orange-600'><TypeWriting /></div>
                     </div>
-                    <p className='text-sm font-light'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione saepe incidunt libero nemo, iusto magnam in veniam ipsa numquam quibusdam voluptatum, doloribus minus, quos consequuntur.</p>
                     <button
                         onClick={downloadFile}
-                        className='py-3 px-5 rounded-lg text-white bg-orange-500 hover:bg-orange-600 w-fit font-medium transition-all'
+                        className='my-2 py-3 px-5 rounded-lg text-white bg-orange-500 hover:bg-orange-600 w-fit font-medium transition-all'
                     >Download My CV</button>
                 </div>
                 <div className="col-span-12 md:col-span-5 order-1 md:order-2">
