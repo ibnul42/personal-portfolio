@@ -35,7 +35,7 @@ export default function AboutMe() {
                 </div> */}
                 <div className="col-span-12 md:col-span-12 flex flex-col gap-4 justify-center">
                     <Title title='About Me' />
-                    <p className='capitalize text-4xl font-semibold'>I can design anything you want</p>
+                    <p className='capitalize text-4xl font-semibold'>I can develop anything you want</p>
                     <div className="text-sm font-light space-y-3">
                         <p>I&apos;m a passionate C#/.NET software developer who thrives on creating fantastic applications that simplify and add fun to life. Coding is not just a job for me; it&apos;s a love affair. I relish learning and problem-solving, always on the lookout for fresh challenges.</p>
                         <p>My journey includes contributing to numerous enterprise projects for various companies, where I&apos;ve honed my skills and gained valuable experience. Sharing my knowledge with others is something I find joy in.</p>
