@@ -65,10 +65,10 @@ export default function AboutMe() {
                             <p>Client-Focused Solutions</p>
                         </div>
                     </div>
-                    <button
+                    {/* <button
                         onClick={downloadFile}
                         className='py-3 px-5 my-5 rounded-lg text-white bg-orange-500 hover:bg-orange-600 w-fit font-medium transition-all'
-                    >Download My CV</button>
+                    >Download My CV</button> */}
                 </div>
             </div>
         </div>
