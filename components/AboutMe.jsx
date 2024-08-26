@@ -37,10 +37,14 @@ export default function AboutMe() {
                     <Title title='About Me' />
                     <p className='capitalize text-4xl font-semibold'>I can develop anything you want</p>
                     <div className="text-sm font-light space-y-3">
-                        <p>I&apos;m a passionate C#/.NET software developer who thrives on creating fantastic applications that simplify and add fun to life. Coding is not just a job for me; it&apos;s a love affair. I relish learning and problem-solving, always on the lookout for fresh challenges.</p>
-                        <p>My journey includes contributing to numerous enterprise projects for various companies, where I&apos;ve honed my skills and gained valuable experience. Sharing my knowledge with others is something I find joy in.</p>
-                        <p>Currently, I&apos;m on the lookout for exciting opportunities to further enhance my skills and broaden my horizons. Whether it&apos;s collaborating with fellow developers, joining a dynamic team, or taking on freelance projects, I&apos;m up for it! If you&apos;re interested in working together, feel free to reach out via LinkedIn or email. I&apos;m eager to connect!</p>
-                        <p>Thanks a bunch for checking out my profile, and here&apos;s to wishing you a fantastic day!</p>
+                        <p>Hi, I&apos;m Henry Diaz, a seasoned software developer and the founder of LeoJonny LLC. With over 10 years of experience in the industry, I specialize in creating powerful and efficient software solutions using .NET technologies, cloud platforms, and modern development practices.</p>
+                    </div>
+                    <p className='capitalize text-4xl font-semibold'>What I Do</p>
+                    <div className="text-sm font-light space-y-3">
+                        <p>I’m passionate about C#/.NET development and dedicated to building applications that are not only functional but also scalable and secure. My love for coding drives me to constantly learn and innovate, tackling complex problems and delivering high-quality software.</p>
+                        <p>My career journey has allowed me to work on a diverse range of projects, from healthcare applications to enterprise solutions, where I’ve honed my skills in both backend and frontend development, cloud integration, and AI frameworks. I take pride in writing clean, maintainable code and architecting solutions that meet the unique needs of my clients.</p>
+                        <p>I’m always open to new opportunities, whether it&apos;s collaborating with a dynamic team, joining an exciting new project, or offering my expertise as a freelance developer. If you&apos;re interested in working together, please reach out via LinkedIn or email. I’m eager to connect and explore how we can create something amazing together!</p>
+                        <p>Thank you for visiting my website, and I hope you have a fantastic day!</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 py-5">
                         {achievements?.map((item) => (
@@ -50,19 +54,15 @@ export default function AboutMe() {
                     <div className="grid grid-cols-2 items-center gap-3 text-xs">
                         <div className="flex gap-2 items-center">
                             <Checkbox />
-                            <p>Work simple and clean design</p>
+                            <p>Full-Stack Development</p>
                         </div>
                         <div className="flex gap-2 items-center">
                             <Checkbox />
-                            <p>Web Design Full stack</p>
+                            <p>Cutting-Edge Technology Integration</p>
                         </div>
                         <div className="flex gap-2 items-center">
                             <Checkbox />
-                            <p>New idea and user friendly design</p>
-                        </div>
-                        <div className="flex gap-2 items-center">
-                            <Checkbox />
-                            <p>Unlimited Revisions</p>
+                            <p>Client-Focused Solutions</p>
                         </div>
                     </div>
                     <button
