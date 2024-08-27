@@ -1,8 +1,9 @@
-import React from 'react'
-import Title from './Title'
-import Image from 'next/image'
-import Link from 'next/link'
-import { FaArrowRight } from "react-icons/fa";
+import Navbar from '@/components/Navbar';
+import Title from '@/components/Title';
+import Image from 'next/image';
+import React from 'react';
+import { FaRegCalendarAlt } from "react-icons/fa";
+
 
 const allBlogs = [
     {
@@ -93,41 +94,55 @@ const allBlogs = [
     }
 ]
 
-export default function Blogs() {
-    return (
-        <div className='bg-white py-5'>
-            <div className="w-full max-w-7xl mx-auto px-3 space-y-3">
-                <div className="space-y-2 flex flex-col items-center">
-                    <Title title='My Blog' />
-                    <p className='uppercase text-4xl font-semibold'>Latest Blog</p>
-                </div>
-                <div className="py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {allBlogs.map(item => (
-                        <SingleBlog key={item.title} {...item} />
-                    ))}
-                </div>
-            </div>
-        </div>
-    )
+const getBlog = async (id) => {
+    const blog = allBlogs.find(b => b.id == id);
+    if (blog) {
+        return blog;
+    }
+    throw new Error('Blog not found');
 }
 
-const SingleBlog = (item) => {
+export async function generateMetadata({ params }) {
+    const blog = await getBlog(params.id);
+    return {
+        title: blog.heading,
+    }
+}
+
+const iconComponents = {
+    FaRegCalendarAlt: FaRegCalendarAlt
+};
+
+export default async function Page({ params }) {
+    const IconComponent = iconComponents['FaRegCalendarAlt'];
+    const blog = await getBlog(parseInt(params.id));
     return (
-        <div className="border border-orange-200 transition-all space-y-2 rounded-md overflow-hidden">
-            <div className="w-full aspect-video relative group">
-                <div className="hidden group-hover:block absolute top-0 left-0 w-full h-full bg-black/20"></div>
-                <Image src={item.icon} width={500} height={500} alt='' className='w-full h-full object-cover' />
-            </div>
-            <div className="px-3 py-4 space-y-3">
-                <p className='text-xs font-light'>{item.date}</p>
-                <p className='text-lg font-semibold capitalize hover:text-orange-400 transition-all'>{item.title}</p>
-                <Link
-                    href={`/blogs/${item.id}`}
-                    className='group flex text-sm font-medium text-orange-500 items-center gap-2 transition-all'
-                >
-                    <span>Read More</span>
-                    <FaArrowRight className='w-3 group-hover:translate-x-3 transition-all' />
-                </Link>
+        <div className="w-screen h-screen overflow-x-hidden overflow-y-auto">
+            <Navbar />
+            <div className="w-full max-w-7xl mx-auto px-3 space-y-10 my-10">
+                <div className="space-y-2 flex flex-col items-center">
+                    <Title title='My Blog' />
+                    <p className='uppercase text-4xl font-semibold'>Our blog details</p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <Image src={blog.icon} width={500} height={500} alt='' className='w-auto h-auto max-h-[30rem] rounded-lg' />
+                </div>
+                <div className="space-y-3">
+                    <div className="flex gap-2 items-center">
+                        {IconComponent && <IconComponent className='text-orange-400 w-4 h-4' />}
+                        <p className='text-sm font-medium'>{blog.date}</p>
+                    </div>
+                    <p className='text-4xl font-semibold'>{blog.title}</p>
+                    <p className='text-sm'>{blog.caption}</p>
+                    <div className="space-y-3">
+                        {blog.lists.map((item, index) => (
+                            <div key={index} className="space-y-2">
+                                <p className='text-xl font-medium'>{item.title}</p>
+                                <p className='text-sm'>{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     )
