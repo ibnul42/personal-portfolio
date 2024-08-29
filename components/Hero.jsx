@@ -22,10 +22,10 @@ export default function Hero() {
                         <p>I am a software developer and a business owner of LeoJonny LLC</p>
                         <div className='text-orange-600'><TypeWriting /></div>
                     </div>
-                    <button
+                    {/* <button
                         onClick={downloadFile}
                         className='my-2 py-3 px-5 rounded-lg text-white bg-orange-500 hover:bg-orange-600 w-fit font-medium transition-all'
-                    >Download My CV</button>
+                    >Download My CV</button> */}
                 </div>
                 <div className="col-span-12 md:col-span-5 order-1 md:order-2">
                     <Image src='/assets/profile.jpg' height={500} width={500} className='w-full h-auto' alt='' />

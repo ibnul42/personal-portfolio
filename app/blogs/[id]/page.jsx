@@ -46,7 +46,7 @@ const allBlogs = [
         icon: '/assets/blogs/blog3.webp',
         heading: 'Building Scalable Microservices',
         title: 'Building Scalable Microservices: Tips for Designing Effective Architectures',
-        date: '3 August, 2023',
+        date: '3 August, 2024',
         caption: 'Microservices architecture has become a popular approach for building scalable and maintainable applications. Here are some key tips for designing effective microservices architectures:',
         lists: [
             { title: 'Define Clear Boundaries:', desc: 'Each microservice should have a well-defined responsibility and operate independently. This ensures that changes to one microservice do not impact others, making the system more modular and easier to manage.' },
@@ -81,7 +81,7 @@ const allBlogs = [
         icon: '/assets/blogs/blog5.webp',
         heading: 'Data Engineering with Databricks',
         title: 'Data Engineering with Databricks: Optimizing Data Workflows for Analytics',
-        date: '21 August, 2023',
+        date: '21 August, 2024',
         caption: 'Data engineering is a critical component of any modern data strategy, enabling businesses to collect, process, and analyze data efficiently. Azure Databricks provides a powerful platform for building scalable data workflows. Here’s how to optimize your data engineering processes with Databricks:',
         lists: [
             { title: 'Leverage Apache Spark for Big Data Processing:', desc: 'Databricks is built on Apache Spark, which provides a unified analytics engine for big data processing. Use Spark’s capabilities to handle large datasets, perform real-time analytics, and execute machine learning tasks.' },
